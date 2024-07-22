@@ -1,0 +1,1 @@
+Mini projeto de adicionar e remover produtos com POO JS
