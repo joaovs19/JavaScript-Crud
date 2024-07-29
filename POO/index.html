@@ -28,10 +28,10 @@
             </div>
             <div class="lineInput">
                 <label>Valor</label>
-                <input type="text" id="valor" placeholder="Valor">
+                <input type="number" id="valor" placeholder="Valor">
             </div>
-                <button onclick="produto.adicionar()">Adicionar</button>
-                <button onclick="produto.excluir()">Excluir</button>
+                <button onclick="produto.salvar()" id="btn1">Salvar</button>
+                <button onclick="produto.cancelar()">Cancelar</button>
         </div>
 
         <div class="content">
@@ -42,16 +42,8 @@
                     <th>Valor</th>
                     <th>Ações</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="center">1</td>
-                        <td>Mesa</td>
-                        <td>R$100</td>
-                        <td class="center">
-                            <i class="bi bi-pencil-square"></i>
-                            <i class="bi bi-trash3"></i>
-                        </td>
-                    </tr>
+                <tbody id="tbody">
+                   
                 </tbody>
             </table>
         </div>
